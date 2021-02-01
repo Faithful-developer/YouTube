@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    font-family: 'My font bold';
+    src: url(../Fonts/BodoniModa6pt-Bold.woff);
+}
+
+@font-face{
+    font-family: 'My font medimum';
+    src: url(../Fonts/BodoniModa6pt-Medium.woff);
+}
+
+@font-face{
+    font-family: 'My font regular';
+    src: url(../Fonts/BodoniModa7pt-Regular.woff);
+}
+
+body{
+    font-family: 'My font medimum';
+    background: white;
+    min-height: 100vh;
+    background: url(../images/retro-mustang-wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    .wrapper{
+        width: 60%;
+        .video_wrapper{
+            width: 100%;
+            height: 400px;
+            position: relative;
+            .reklama{
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                position: absolute;
+                display: none;
+                &.active{
+                    display: inline-block;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            button{
+                background: transparent;
+                border: none;
+                outline: none;
+            }
+            video{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .top_btn-wrapper{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                z-index: 5;
+                margin: auto;
+                #top_btn{
+                    outline: none;
+                    background: transparent;
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                    &.active{
+                        display: inline-block;
+                    }
+                }
+            }
+            .bottom_menu{
+                width: 100%;
+                position: absolute;
+                background: red;
+                display: flex;
+                align-items: center;
+                bottom: 0;
+                left: 0;
+                padding: 10px 15px;
+                box-sizing: border-box;
+                .fullscreen{
+                    width: 30px;
+                    height: 30px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+                .time{
+                    width: 50%;
+                    #current_time-bar{
+                        width: 65%;
+                    }
+                }
+                #volume_img{
+                    width: 20px;
+                    height: 20px;
+                    object-fit: contain;
+                    margin: 0 15px;
+                }
+                .volume{
+                    margin-right: 40px;
+                    display: flex;
+                    align-items: center;
+                }
+                #play{
+                    width: 30px;
+                    height: 30px;
+                }
+                #pause{
+                    width: 30px;
+                    height: 30px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

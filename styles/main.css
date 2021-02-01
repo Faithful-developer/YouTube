@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'My font bold';
+  src: url(../Fonts/BodoniModa6pt-Bold.woff);
+}
+
+@font-face {
+  font-family: 'My font medimum';
+  src: url(../Fonts/BodoniModa6pt-Medium.woff);
+}
+
+@font-face {
+  font-family: 'My font regular';
+  src: url(../Fonts/BodoniModa7pt-Regular.woff);
+}
+
+body {
+  font-family: 'My font medimum';
+  background: white;
+  min-height: 100vh;
+  background: url(../images/retro-mustang-wallpaper.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .wrapper {
+  width: 60%;
+}
+
+.container .wrapper .video_wrapper {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.container .wrapper .video_wrapper .reklama {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: none;
+}
+
+.container .wrapper .video_wrapper .reklama.active {
+  display: inline-block;
+}
+
+.container .wrapper .video_wrapper .reklama img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .wrapper .video_wrapper button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.container .wrapper .video_wrapper video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .wrapper .video_wrapper .top_btn-wrapper {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 5;
+  margin: auto;
+}
+
+.container .wrapper .video_wrapper .top_btn-wrapper #top_btn {
+  outline: none;
+  background: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.container .wrapper .video_wrapper .top_btn-wrapper #top_btn.active {
+  display: inline-block;
+}
+
+.container .wrapper .video_wrapper .bottom_menu {
+  width: 100%;
+  position: absolute;
+  background: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  left: 0;
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .wrapper .video_wrapper .bottom_menu .fullscreen {
+  width: 30px;
+  height: 30px;
+}
+
+.container .wrapper .video_wrapper .bottom_menu .fullscreen img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.container .wrapper .video_wrapper .bottom_menu .time {
+  width: 50%;
+}
+
+.container .wrapper .video_wrapper .bottom_menu .time #current_time-bar {
+  width: 65%;
+}
+
+.container .wrapper .video_wrapper .bottom_menu #volume_img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 15px;
+}
+
+.container .wrapper .video_wrapper .bottom_menu .volume {
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .wrapper .video_wrapper .bottom_menu #play {
+  width: 30px;
+  height: 30px;
+}
+
+.container .wrapper .video_wrapper .bottom_menu #pause {
+  width: 30px;
+  height: 30px;
+}
+
+.container .wrapper .video_wrapper .bottom_menu #pause img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=main.css.map */

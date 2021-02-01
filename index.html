@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./images/1024px-YouTube_full-color_icon_(2017).svg.png">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <section class="container">
+        <div class="wrapper">
+            <div class="video_wrapper">
+                <video  id="video_player">
+                    <source src="">
+                </video>
+                <div class="top_btn-wrapper">
+                    <button id="top_btn"><img src="./images/play-button.svg"><button>
+                </div>
+                <div class="reklama">
+                    <img src="./images/reklama.jpg">
+                </div>
+                <div class="bottom_menu">
+                    <button id="play"><img src="./images/play_menu.svg"></button>
+                    <button id="pause"><img src="./images/pause-button.svg"></button>
+                    <div class="time">
+                        <img src="" alt="">
+                        <span id="hours_current"></span>:<span id="minutes_current"></span>:<span id="seconds_current"></span>
+                        <input type="range" id="current_time-bar" min="0" max="100">
+                        <span id="hours"></span>:<span class="minutes"></span>:<span class="seconds"></span>
+                    </div>
+                    <div class="volume">
+                        <input type="range" id="volume_bar">
+                        <img src="./images/volume-up-interface-symbol-1.svg" id="volume_img">
+                    </div>
+                    <button class="fullscreen">
+                        <img src="./images/fullscreen.svg">
+                    </button>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
